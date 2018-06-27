@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Input = ({ handleChange }) =>
+const Input = ({handleChange}) =>
   <React.Fragment>
     <label htmlFor="words">Facebook</label>
     <textarea 
