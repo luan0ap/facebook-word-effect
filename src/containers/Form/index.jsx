@@ -10,12 +10,11 @@ class Form extends Component {
     words: ['Hello World', 'congratulations', 'someome']
   }
 
-  getWords = () => this.state.words
-
   handleChange = ({ target }) => this.setState(state => state.input = target.value)
 
   handleSubmit = (event) => {
     event.preventDefault()
+    alert('hello world')
   }
 
   render() {
@@ -23,7 +22,7 @@ class Form extends Component {
       <form action="" className="form-word" >
         <Input handleChange={this.handleChange} />
         <div className="bottom">
-          <Button handleSubmit={this.handleSubmit} />
+          <Button state={this.state.input} handleSubmit={this.handleSubmit} />
         </div>
       </form>
     )

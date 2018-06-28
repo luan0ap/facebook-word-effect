@@ -5,9 +5,7 @@ import './properties.css'
 const Input = ({handleChange}) =>
   <React.Fragment>
     <textarea 
-    name="words" 
-    cols="30" 
-    rows="10" 
+    name="words"  
     className="input" 
     placeholder="Insert your text"
     onChange={handleChange}>
