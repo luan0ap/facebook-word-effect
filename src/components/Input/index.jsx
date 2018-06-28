@@ -1,14 +1,15 @@
 import React from 'react'
+import './style.css'
+import './properties.css'
 
 const Input = ({handleChange}) =>
   <React.Fragment>
-    <label htmlFor="words">Facebook</label>
     <textarea 
     name="words" 
-    id="word" 
     cols="30" 
     rows="10" 
     className="input" 
+    placeholder="Insert your text"
     onChange={handleChange}>
     </textarea>
   </ React.Fragment>
