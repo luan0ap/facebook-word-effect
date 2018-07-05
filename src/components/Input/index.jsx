@@ -2,14 +2,13 @@ import React from 'react'
 import './style.css'
 import './properties.css'
 
-const Input = ({handleChange}) =>
-  <React.Fragment>
+const Input = ({handleChange}) => (
     <textarea 
     name="words"  
     className="input" 
     placeholder="Insert your text"
     onChange={handleChange}>
     </textarea>
-  </ React.Fragment>
+)
 
 export default Input
