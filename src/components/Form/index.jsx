@@ -6,11 +6,11 @@ import Input from 'components/Input'
 
 const Form = ({ state, set }) => {
 
-  const handleChange = ({ target }) => set(target)
+  const handleChange = ({target}) => set(target)(thisState => thisState.input = target.value)
 
   const handleSubmit = (event) => {
     event.preventDefault()
-    alert('hello world')
+    set(state)(thisState => ({posts: [...thisState.posts, state.input]}))
   }
 
   return (

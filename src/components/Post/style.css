@@ -1,0 +1,10 @@
+.posts-user {
+  width: 30em;
+  margin: 0 0 5em 0;
+  padding: 0;
+}
+.posts-user > ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

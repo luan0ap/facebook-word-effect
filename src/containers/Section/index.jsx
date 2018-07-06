@@ -1,21 +1,28 @@
-import React, { Components } from 'react'
+import React, { Component } from 'react'
 import Form from 'components/Form'
+import Post from 'components/Post'
 
-export default class Section extends Components {
+class Section extends Component {
   constructor(props) {
     super(props)
     this.state = {
       input: '',
-      words: ['Hello World', 'congratulations', 'someome']
+      words: ['Hello World', 'congratulations', 'someome'],
+      posts: ['testando']
     }
   }
 
-  set = (target) => this.setState(state => state.input = target.value)
+  set = (data = '') => (cb = () => { }) => this.setState(cb.bind(this, ...data))
 
   render() {
     return (
-      <Form state={this.state} set={this.set}/>
+      [
+        <Post state={this.state} />,
+        <Form state={this.state} set={this.set} />
+      ]
     )
   }
 
 }
+
+export default Section
