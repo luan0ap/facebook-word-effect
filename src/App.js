@@ -3,9 +3,9 @@ import 'App.css'
 import Section from './containers/Section'
 
 class App extends Component {
-  render() {
+  render () {
     return (
-      <div className="App">
+      <div className='App'>
         <Section />
       </div>
     )

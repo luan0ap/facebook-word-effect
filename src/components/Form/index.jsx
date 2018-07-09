@@ -5,8 +5,7 @@ import Button from 'components/Button'
 import Input from 'components/Input'
 
 const Form = ({ state, set }) => {
-
-  const handleChange = ({target}) => set(target)(thisState => thisState.input = target.value)
+  const handleChange = ({target}) => set(target)(thisState => (thisState.input = target.value))
 
   const handleSubmit = (event) => {
     event.preventDefault()
@@ -14,7 +13,7 @@ const Form = ({ state, set }) => {
   }
 
   return (
-    <form action="" className="form-word" >
+    <form action='' className='form-word' >
       <Input handleChange={handleChange} />
       <div>
         <Button state={state.input} handleSubmit={handleSubmit} />

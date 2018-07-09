@@ -1,7 +1,9 @@
 .posts-user {
   width: 30em;
+  height: 20em;
   margin: 0 0 5em 0;
-  padding: 0;
+  padding: 0 1em;
+  overflow-y: auto
 }
 .posts-user > ul{
   margin: 0;
