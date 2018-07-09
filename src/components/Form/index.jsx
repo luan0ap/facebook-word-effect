@@ -5,11 +5,13 @@ import Button from 'components/Button'
 import Input from 'components/Input'
 
 const Form = ({ state, set }) => {
-  const handleChange = ({target}) => set(target)(thisState => (thisState.input = target.value))
+  const include = arr => value => arr.includes(value)
+
+  const handleChange = ({ target }) => set(target)(thisState => (thisState.input = target.value))
 
   const handleSubmit = (event) => {
     event.preventDefault()
-    set(state)(thisState => ({posts: [...thisState.posts, state.input]}))
+    set(state)(thisState => ({ posts: [{ ...thisState.posts }, { text: state.text, special: false }] }))
   }
 
   return (

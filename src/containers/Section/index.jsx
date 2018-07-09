@@ -8,7 +8,7 @@ class Section extends Component {
     this.state = {
       input: '',
       words: ['Hello World', 'congratulations', 'someome'],
-      posts: ['testando']
+      posts: [{ text: 'hi', special: false }]
     }
   }
 

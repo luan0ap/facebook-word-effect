@@ -1,5 +1,6 @@
 import React from 'react'
 import './style.css'
-const Item = ({data, index}) => <li className='item' key={index}>{data}</li>
+
+const Item = ({text, special}) => <li className='item'>{text}</li>
 
 export default Item
