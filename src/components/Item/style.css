@@ -9,5 +9,6 @@
 }
 
 .special {
-  color: red
+  color: red;
+  cursor: pointer;
 }
