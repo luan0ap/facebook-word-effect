@@ -11,6 +11,8 @@ Just tipe a word and publish, words special are:
 - parabens
 - good job
 
+<a href="https://imgur.com/uJoKLmp"><img src="https://i.imgur.com/uJoKLmp.png" title="source: imgur.com" width='500'/></a>
+
 ### Installing
 
 Clone this repository 
