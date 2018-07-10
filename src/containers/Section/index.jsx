@@ -7,7 +7,7 @@ class Section extends Component {
     super(props)
     this.state = {
       input: '',
-      words: ['Hello World', 'congratulations', 'someome'],
+      words: ['congratulations', 'parabéns', 'parabens', 'good job'],
       posts: []
     }
   }
