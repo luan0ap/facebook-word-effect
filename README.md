@@ -1,4 +1,4 @@
-# Project Title
+# Try Word Effect
 
 Project developed in React what are trying imitate effect in some word of the facebook. For example: congratulations
 
